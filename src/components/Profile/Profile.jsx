@@ -1,20 +1,18 @@
 import '../Profile/Profile.css';
 
 export default function Profile({
-  user: {
-    username,
-    tag,
-    location,
-    avatar,
-    stats: { followers, views, likes },
-  },
+  name,
+  tag,
+  location,
+  image,
+  stats: { followers, views, likes },
 }) {
   return (
     <div className="container">
       <div className="userCard">
-        <img className="profileImage" src={avatar} alt="User avatar" />
-        <div className="top-wrap">
-          <p className="userName">{username}</p>
+        <img className="profileImage" src={image} alt="User avatar" />
+        <div className="topWrap">
+          <p className="userName">{name}</p>
           <p className="userTag">@{tag}</p>
           <p className="userLocation">{location}</p>
         </div>
