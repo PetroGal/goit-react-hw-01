@@ -1,5 +1,3 @@
-import css from './Transaction.module.css';
-
 export default function Transaction({
   transaction: { type, amount, currency },
 }) {
