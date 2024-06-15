@@ -1,4 +1,4 @@
-import '../Profile/Profile.css';
+import css from '../Profile/Profile.module.css';
 
 export default function Profile({
   name,
@@ -8,27 +8,27 @@ export default function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div className="container">
-      <div className="userCard">
-        <img className="profileImage" src={image} alt="User avatar" />
-        <div className="topWrap">
-          <p className="userName">{name}</p>
-          <p className="userTag">@{tag}</p>
-          <p className="userLocation">{location}</p>
+    <div className={css.container}>
+      <div className={css.userCard}>
+        <img className={css.profileImage} src={image} alt="User avatar" />
+        <div className={css.topWrap}>
+          <p className={css.userName}>{name}</p>
+          <p className={css.userTag}>@{tag}</p>
+          <p className={css.userLocation}>{location}</p>
         </div>
 
-        <ul className="statsList">
-          <li className="statsList-item">
+        <ul className={css.statsList}>
+          <li className={css.statsListItem}>
             <span>Followers</span>
-            <span className="item-value">{followers}</span>
+            <span className={css.itemValue}>{followers}</span>
           </li>
-          <li className="statsList-item">
+          <li className={css.statsListItem}>
             <span>Views</span>
-            <span className="item-value">{views}</span>
+            <span className={css.itemValue}>{views}</span>
           </li>
-          <li className="statsList-item">
+          <li className={css.statsListItem}>
             <span>Likes</span>
-            <span className="item-value">{likes}</span>
+            <span className={css.itemValue}>{likes}</span>
           </li>
         </ul>
       </div>

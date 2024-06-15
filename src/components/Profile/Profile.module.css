@@ -74,7 +74,7 @@ ul {
   border-top: 2px solid #808080;
 }
 
-.statsList-item {
+.statsListItem {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,11 +89,11 @@ ul {
   row-gap: 5px;
 }
 
-.statsList-item:not(:last-child) {
+.statsListItem:not(:last-child) {
   border-right: 2px solid #808080;
 }
 
-.item-value {
+.itemValue {
   font-weight: bold;
   font-size: 16px;
 }
